@@ -10,12 +10,12 @@
 int main() {
   int fdes, res, zapis;
   char c[1024];
-  //char w[1024];
-  // Utworzenie pliku FIFO 
-  /* if ((mkfifo("myfifo",0666))==-1){
-        printf("fifo error \n");
-        exit(1);
-    };*/
+  // //char w[1024];
+  // // Utworzenie pliku FIFO 
+  // /* if ((mkfifo("myfifo",0666))==-1){
+  //       printf("fifo error \n");
+  //       exit(1);
+  //   };*/
   fdes = open("FIFO",O_WRONLY);
   if(fdes < 0) { 
   printf("Open error %d \n",errno); 

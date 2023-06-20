@@ -10,9 +10,7 @@
 int main() {
   int fdes, res, zapis;
   char c[1024];
-  //char w[1024];
-  // Utworzenie pliku FIFO 
-  // Odczyt z pliku FIFO
+  char w[1024];
   fdes = open("FIFO",O_RDONLY | O_CREAT);
   if(fdes < 0) { 
   printf("Open error %d \n",errno); 
